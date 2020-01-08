@@ -9,7 +9,7 @@ def map(source)
   arr
 end
 
-def reduce(source, starting_number = 0)
+def reduce(source)
   i = 0
   total = 0
 
