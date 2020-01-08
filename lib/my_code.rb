@@ -10,3 +10,12 @@ def map(source)
 end
 
 def reduce(source, starting_number = 0)
+  i = 0
+  total = 0
+
+    while i < source.length do
+    total += (yield(source[i]))
+    i += 1
+    end
+  total
+end
