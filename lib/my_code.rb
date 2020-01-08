@@ -8,3 +8,19 @@ def map(source)
     end
   arr
 end
+
+def reduce(source, starting_point = nil)
+  if starting_point
+    sum = starting_point
+    i = 0
+  else
+    sum = source[0]
+    i = 1
+  end 
+
+  while i < source.length
+    sum = yield(sum, source[i])
+    i += 1
+  end
+  sum
+end
