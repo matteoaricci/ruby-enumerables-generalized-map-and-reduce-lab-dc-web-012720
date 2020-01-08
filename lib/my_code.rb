@@ -8,3 +8,5 @@ def map(source)
     end
   arr
 end
+
+def reduce(source, starting_number = 0)
