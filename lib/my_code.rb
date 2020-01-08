@@ -8,14 +8,3 @@ def map(source)
     end
   arr
 end
-
-def reduce(source, starting_value = nil)
-  i = 0
-  total = 0
-
-    while i < source.length do
-    total += (yield(source[i]))
-    i += 1
-    end
-  total
-end
